@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Najad Musab VK — Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav id="navbar">
+    <div class="nav-logo">NM<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="#contact">Let's Talk</a></div>
+    <button class="burger" id="burger">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── MOBILE MENU ─── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#hero" class="mob-link">Home</a></li>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ─── HERO ─── -->
+  <section id="hero">
+    <canvas id="bgCanvas"></canvas>
+
+    <div class="hero-inner">
+      <div class="hero-left">
+        <p class="hero-eyebrow reveal-up">Based in Kerala, India</p>
+        <h1 class="hero-name reveal-up">
+          Najad<br/>
+          <em>Musab</em><br/>
+          VK
+        </h1>
+        <div class="hero-roles reveal-up">
+          <span>Software Development Student</span>
+          <span class="sep">·</span>
+          <span>Web Developer</span>
+        </div>
+        <div class="hero-ctas reveal-up">
+          <a href="#projects" class="btn-primary">View Work</a>
+          <a href="#contact" class="btn-ghost">Contact Me</a>
+        </div>
+        <div class="hero-scroll reveal-up">
+          <div class="scroll-line"></div>
+          <span>Scroll</span>
+        </div>
+      </div>
+
+      <div class="hero-right reveal-scale">
+        <div class="photo-frame">
+          <div class="photo-inner">
+            <!-- Placeholder professional photo -->
+            <div class="photo-placeholder">
+              <div class="avatar-ring"></div>
+               <img src="" alt="Najad Musab" class="profile-photo">
+              <div class="photo-glow"></div>
+            </div>
+          </div>
+          <div class="frame-orbit orbit-1"></div>
+          <div class="frame-orbit orbit-2"></div>
+          <div class="frame-badge">
+            <span>✦</span> Open to work
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about">
+    <div class="about-inner">
+      <div class="about-left">
+        <p class="section-label">About</p>
+        <h2 class="section-heading">Crafting Digital<br/><em>Experiences</em></h2>
+        <p class="about-body">
+          I'm a B.Voc Software Development student with a deep passion for building clean, meaningful software. My work sits at the intersection of logic and aesthetics — where precise code meets thoughtful design.
+        </p>
+        <p class="about-body">
+          I believe great software tells a story. Every interface I build is an invitation — simple on the surface, purposeful at its core. I'm driven by curiosity, fueled by craft.
+        </p>
+        <p class="about-body">
+          My goal is to grow into a full-stack engineer who doesn't just write code, but architects experiences that matter.
+        </p>
+        <div class="about-tags">
+          <span>Problem Solver</span>
+          <span>Detail Oriented</span>
+          <span>Fast Learner</span>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="about-photo">
+          <div class="about-placeholder">
+            <div class="ap-ring"></div>
+             <img src="/images/ChatGPT Image Mar 20, 2026, 01_06_30 AM.png" alt="Najad Musab" class="profile-photo">
+          </div>
+          <div class="about-accent-block"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section id="skills">
+    <div class="skills-inner">
+      <p class="section-label center">Expertise</p>
+      <h2 class="section-heading center">What I<br/><em>Bring</em></h2>
+
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-top">
+            <span class="skill-name">Web Development</span>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          <p class="skill-desc">HTML · CSS · JavaScript · React · Responsive Design</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top">
+            <span class="skill-name">Programming</span>
+            <span class="skill-pct">82%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+          <p class="skill-desc">Python · C · Java · Data Structures & Algorithms</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top">
+            <span class="skill-name">Problem Solving</span>
+            <span class="skill-pct">91%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="91"></div></div>
+          <p class="skill-desc">Logical Thinking · Debugging · System Design</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top">
+            <span class="skill-name">UI / UX Thinking</span>
+            <span class="skill-pct">78%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+          <p class="skill-desc">Design Principles · Figma · User-Centred Approach</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section id="projects">
+    <div class="projects-inner">
+      <p class="section-label center">Work</p>
+      <h2 class="section-heading center">Selected<br/><em>Projects</em></h2>
+<!-- Project 1 -->
+<div class="project-row">
+
+  <!-- LEFT IMAGE -->
+  <div class="project-visual left">
+    <div class="proj-img-wrap">
+      <img src="/images/ecomerse.jfif" class="proj-img" alt="Ecommerce Platform">
+    </div>
+  </div>
+
+  <!-- RIGHT CONTENT -->
+  <div class="project-info right">
+    <span class="proj-num">01</span>
+
+    <h3 class="proj-title">Ecommerce Platform</h3>
+
+    <p class="proj-desc">
+      A modern ecommerce platform designed for users to browse products, view details, and place orders easily through WhatsApp integration. Built with a clean interface and smooth user experience, making it a simple and effective online shopping solution.
+    </p>
+
+    <p class="proj-tech">
+      HTML · CSS · JavaScript · WhatsApp Integration · Responsive Design
+    </p>
+
+    <div class="proj-links">
+      <a href="https://najadmusab.github.io/Cosmaticss/" target="_blank" class="btn-primary sm">
+        View Project
+      </a>
+
+      <a href="https://github.com/najadmusab/Cosmaticss" target="_blank" class="btn-ghost sm">
+        GitHub
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Project 2 -->
+<div class="project-row reverse">
+
+  <!-- TEXT SIDE -->
+  <div class="project-info left">
+    <span class="proj-num">02</span>
+
+    <h3 class="proj-title">Royal Laundry</h3>
+
+    <p class="proj-desc">
+      A modern laundry service website that allows users to explore services, place orders easily, and connect via WhatsApp.
+    </p>
+
+    <p class="proj-tech">
+      HTML · CSS · JavaScript · Responsive Design
+    </p>
+
+    <div class="proj-links">
+      <a href="https://najadmusab.github.io/Royal-loundaryyy/" target="_blank" class="btn-primary sm">
+        View Project
+      </a>
+
+      <a href="https://github.com/najadmusab/Royal-loundaryyy" target="_blank" class="btn-ghost sm">
+        GitHub
+      </a>
+    </div>
+  </div>
+
+  <!-- IMAGE SIDE -->
+  <div class="project-visual right">
+    <div class="proj-img-wrap">
+      <img src="/images/How to Wash Hoodies and Keep Them Soft.jfif" class="proj-img" alt="Laundry Project">
+    </div>
+  </div>
+
+</div>
+
+      <!-- Project 3 -->
+    <div class="project-row">
+
+  <!-- LEFT IMAGE -->
+  <div class="project-visual left">
+    <div class="proj-img-wrap">
+      <img src="/images/Collection of makeup and beauty products _ Premium Photo.jfif" class="proj-img" alt="Cosmetics Website">
+    </div>
+  </div>
+
+  <!-- RIGHT CONTENT -->
+  <div class="project-info right">
+    <span class="proj-num">03</span>
+
+    <h3 class="proj-title">Cosmetics eCommerce Website</h3>
+
+    <p class="proj-desc">
+      A modern cosmetics eCommerce website that allows users to explore beauty products, view details, and place orders easily through WhatsApp integration. Designed with a clean and user-friendly interface for real-world usability.
+    </p>
+
+    <p class="proj-tech">
+      HTML · CSS · JavaScript · WhatsApp Integration · Responsive Design
+    </p>
+
+    <div class="proj-links">
+      <a href="https://najadmusab.github.io/Cosmaticss/" target="_blank" class="btn-primary sm">
+        View Project
+      </a>
+
+      <a href="https://github.com/najadmusab/Cosmaticss" target="_blank" class="btn-ghost sm">
+        GitHub
+      </a>
+    </div>
+  </div>
+
+</div>
+
+  <!-- ─── EDUCATION ─── -->
+  <section id="education">
+    <div class="edu-inner">
+      <p class="section-label center">Journey</p>
+      <h2 class="section-heading center">Education &<br/><em>Background</em></h2>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-year">2022 – Present</span>
+            <h3>B.Voc Software Development</h3>
+            <p>Pursuing a Bachelor of Vocation degree in Software Development, gaining deep expertise in full-stack development, algorithms, and software engineering practices.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-year">2020 – 2022</span>
+            <h3>Higher Secondary Education</h3>
+            <p>Completed Higher Secondary with Computer Science — where a fascination with code first ignited into something real.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ACHIEVEMENTS ─── -->
+  <section id="achievements">
+    <div class="ach-inner">
+      <p class="section-label center">Recognition</p>
+      <h2 class="section-heading center">By the<br/><em>Numbers</em></h2>
+      <div class="ach-grid">
+        <div class="ach-card">
+          <span class="ach-num">3.8</span>
+          <span class="ach-label">GPA</span>
+        </div>
+        <div class="ach-card">
+          <span class="ach-num">Top 5%</span>
+          <span class="ach-label">of Cohort</span>
+        </div>
+        <div class="ach-card">
+          <span class="ach-num">1st</span>
+          <span class="ach-label">Hackathon Prize</span>
+        </div>
+        <div class="ach-card">
+          <span class="ach-num">10+</span>
+          <span class="ach-label">Projects Built</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── APPROACH ─── -->
+  <section id="approach">
+    <div class="approach-inner">
+      <p class="section-label center">Process</p>
+      <h2 class="section-heading center">How I<br/><em>Think</em></h2>
+      <div class="approach-steps">
+        <div class="step">
+          <span class="step-num">01</span>
+          <h3>Understand</h3>
+          <p>Before writing a single line of code, I deeply understand the problem — the user, the constraints, the goal.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">02</span>
+          <h3>Design</h3>
+          <p>I sketch the architecture and user flow, ensuring clarity before complexity enters the picture.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <h3>Build</h3>
+          <p>I write clean, modular, maintainable code — built to last, easy to extend, pleasant to read.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">04</span>
+          <h3>Refine</h3>
+          <p>The first version is never the final version. I iterate, test, and polish until the experience feels inevitable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact">
+    <div class="contact-inner">
+      <p class="section-label center">Connect</p>
+      <h2 class="section-heading center">Let's Build<br/><em>Something</em></h2>
+      <p class="contact-sub">Have a project, an idea, or just want to say hello? I'd love to hear from you.</p>
+
+      <div class="contact-wrap">
+        <div class="contact-info">
+          <a href="mailto:najadmusabvk@email.com" class="contact-link">
+            <span class="ci-icon">✉</span>
+            <span>najadmusabvk@email.com</span>
+          </a>
+          <a href="tel:+919999999999" class="contact-link">
+            <span class="ci-icon">✆</span>
+            <span>+91 99999 99999</span>
+          </a>
+          <a href="https://wa.me/919999999999" class="contact-link whatsapp">
+            <span class="ci-icon">◉</span>
+            <span>Chat on WhatsApp</span>
+          </a>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="fname" placeholder=" " required />
+            <label for="fname">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="femail" placeholder=" " required />
+            <label for="femail">Email Address</label>
+          </div>
+          <div class="form-group">
+            <textarea id="fmsg" rows="4" placeholder=" " required></textarea>
+            <label for="fmsg">Message</label>
+          </div>
+          <button type="submit" class="btn-primary full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">NM<span class="dot">.</span></span>
+      <p>© 2025 Najad Musab VK — Crafted with intention</p>
+      <div class="footer-links">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
